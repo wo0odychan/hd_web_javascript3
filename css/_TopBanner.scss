@@ -1,0 +1,43 @@
+.TopBanner {
+    background: $primary-color;
+
+
+    .itm01 {
+        a {
+            background: url(../../images/banner01.jpg);
+        }
+    }
+
+    .itm02 {
+        a {
+            background: url(../../images/banner02.jpg);
+        }
+    }
+
+    .itm03 {
+        a {
+            background: url(../../images/banner03.jpg);
+        }
+    }
+
+    .itm a {
+        display: block;
+        height: 16rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .dots {
+        @include position-center();
+        z-index: 999;
+        display: flex;
+        gap: 4px;
+
+        & li {
+            width: 4px;
+            height: 10px;
+            background: $light-color;
+        }
+    }
+}
