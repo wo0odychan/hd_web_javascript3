@@ -49,11 +49,15 @@ li {
     list-style: none;
 }
 
-button,
+body {
+    line-height: 1;
+    word-break: keep-all;
+}
+
 input,
+button,
 textarea {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    vertical-align: middle;
 }
 
 img {
@@ -74,4 +78,13 @@ address {
 
 .skip {
     display: none;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
